@@ -22,7 +22,7 @@ docker-lamp2
 ## 前提条件
   - 本手順書でのレビュー対象ブランチ
     - https://github.com/takazumik/yokuwakaru/tree/feature/twitter
-  - レビュイがphpmyadminでCREATE DATABASEオプション付きでエクスポートしたsqlファイルをレビュー対象リポジトリに含めている前提とする
+  - レビュイがphpMyAdminでCREATE DATABASEオプション付きでエクスポートしたsqlファイルをレビュー対象リポジトリに含めている前提とする
     - https://github.com/takazumik/yokuwakaru/blob/feature/twitter/mini_bbs.sql
 
 ## 環境構築手順
@@ -42,7 +42,7 @@ docker-lamp2
     cd yokuwakaru
     git checkout feature/twitter
     ```
-1. phpmyadminでレビュー対象のsqlをインポートする。
+1. phpMyAdminでレビュー対象のsqlをインポートする。
     - ブラウザで http://localhost:10040 にアクセスする
     - yokuwakaru/mini_bbs.sqlをインポートする
 1. レビュー対象のDB接続情報をfixする
