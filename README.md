@@ -32,7 +32,7 @@ docker-lamp2
 1. htmlにレビュー対象ブランチをcloneする
     ```
     cd html
-    git clone https://github.com/takazumik/yokuwakaru
+    git clone https://github.com/takazumik/yokuwakaru.git
     cd yokuwakaru
     git checkout feature/twitter
     ```
