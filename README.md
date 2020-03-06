@@ -4,7 +4,7 @@
 ## ディレクトリ解説
 ```
 docker-lamp2
-├── html .............. ドキュメントルート。ここにレビュー対象のリポジトリをcloneする
+├── html .............. ドキュメントルート。ここにレビュー対象リポジトリをcloneする
 │   └── index.php ..... phpinfo();
 ├── mysql5.7
 │   ├── mysql ......... 起動すると作られる。データ永続化用
@@ -35,12 +35,19 @@ docker-lamp2
     ```
     docker-compose up -d
     ```
-1. htmlにレビュー対象ブランチをcloneする
+1. htmlディレクトリにレビュー対象リポジトリをcloneする
     ```
     cd html
     git clone https://github.com/takazumik/yokuwakaru.git
+    ```
+1. レビュー対象ブランチをcheckoutする
+    ```
     cd yokuwakaru
     git checkout feature/twitter
+    ```
+1. ディレクトリに書き込み権限を付与する
+    ```
+    chmod 777 -R *
     ```
 1. phpMyAdminでレビュー対象のsqlをインポートする。
     - ブラウザで http://localhost:10040 にアクセスする
