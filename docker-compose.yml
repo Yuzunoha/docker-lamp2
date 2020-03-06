@@ -7,7 +7,7 @@ services:
       - ./php.ini:/usr/local/etc/php/php.ini
       - ./html:/var/www/html
     ports:
-      - 8080:80
+      - 10080:80
   mysql:
     image: mysql:5.7
     volumes:
@@ -27,6 +27,6 @@ services:
     links:
       - mysql
     ports:
-      - 4040:80
+      - 10040:80
     volumes:
       - ./phpmyadmin/sessions:/sessions
