@@ -1,0 +1,4 @@
+/html/*
+!/html/index.php
+
+/mysql5.7/*
