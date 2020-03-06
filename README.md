@@ -49,7 +49,7 @@ docker-lamp2
     ```
     chmod 777 -R *
     ```
-1. phpMyAdminでレビュー対象のsqlをインポートする。
+1. phpMyAdminでレビュー対象のsqlをインポートする
     - ブラウザで http://localhost:10040 にアクセスする
     - yokuwakaru/mini_bbs.sqlをインポートする
 1. レビュー対象のDB接続情報をfixする
