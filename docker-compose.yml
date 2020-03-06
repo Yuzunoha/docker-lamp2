@@ -2,16 +2,20 @@ version: '3'
 
 services:
   php:
-    image: php:7.2-apache
+    build:
+      context: ./php7.2
     volumes:
-      - ./php.ini:/usr/local/etc/php/php.ini
+      - ./php7.2/php.ini:/usr/local/etc/php/php.ini
       - ./html:/var/www/html
     ports:
       - 10080:80
   mysql:
     image: mysql:5.7
     volumes:
-      - ./mysql:/var/lib/mysql
+      - ./mysql5.7/my.cnf:/etc/mysql/conf.d/my.cnf  
+      - ./mysql5.7/mysql:/var/lib/mysql
+    ports:
+      - 13306:3306
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=test
