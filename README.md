@@ -31,7 +31,7 @@ docker-lamp2
     git clone https://github.com/Yuzunoha/docker-lamp2.git
     cd docker-lamp2
     ```
-1. 起動する
+1. docker起動
     ```
     docker-compose up -d
     ```
@@ -57,6 +57,10 @@ docker-lamp2
       `host=localhost` -> `host=mysql`
 1. 環境構築完了
     - ブラウザで http://localhost:10080/yokuwakaru にアクセスする
+1. docker停止
+    ```
+    docker-compose down
+    ```
 
 
 ## 参考
