@@ -8,7 +8,7 @@ docker-lamp2
 │   └── index.php ..... phpinfo();
 ├── mysql5.7
 │   ├── mysql ......... 起動すると作られる。データ永続化用
-│   ├── mysqlvolume ... mysqlコンテナにマウントされる。ホストとのフィアル受け渡し用
+│   ├── mysqlvolume ... mysqlコンテナにマウントされる。ホストとのファイル受け渡し用
 │   └── my.cnf
 ├── php7.2
 │   ├── Dockerfile
