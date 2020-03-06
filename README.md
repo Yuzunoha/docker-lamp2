@@ -9,17 +9,23 @@ docker-lamp2
 ├── mysql5.7
 │   ├── mysql ......... 起動すると作られる。データ永続化用
 │   ├── mysqlvolume ... mysqlコンテナにマウントされる。ホストとのファイル受け渡し用
-│   └── my.cnf
+│   └── my.cnf ........ mysqlコンテナの設定ファイル。日本語が文字化けしない
 ├── php7.2
-│   ├── Dockerfile
-│   └── php.ini
+│   ├── Dockerfile .... phpコンテナのDockerファイル
+│   └── php.ini ....... phpの設定ファイル。日本語が文字化けしない
 ├── .gitignore
 ├── docker-compose.yml
 └── README.md
 ```
 
+
+## 前提条件
+  - 本手順書でのレビュー対象ブランチ
+    - https://github.com/takazumik/yokuwakaru/tree/feature/twitter
+  - レビュイがphpmyadminでCREATE DATABASEオプション付きでエクスポートしたsqlファイルをレビュー対象リポジトリに含めている前提とする
+    - https://github.com/takazumik/yokuwakaru/blob/feature/twitter/mini_bbs.sql
+
 ## 環境構築手順
-### レビュー対象ブランチ(https://github.com/takazumik/yokuwakaru/tree/feature/twitter)
 1. docker-lamp2をcloneする。以降cloneしたリポジトリ内でCUI操作する
     ```
     git clone https://github.com/Yuzunoha/docker-lamp2.git
