@@ -37,13 +37,13 @@ docker-lamp2
     git checkout feature/twitter
     ```
 1. phpmyadminでレビュー対象のsqlをインポートする。
-    - ブラウザで `localhost:10040` にアクセスする
+    - ブラウザで http://localhost:10040 にアクセスする
     - yokuwakaru/mini_bbs.sqlをインポートする
 1. レビュー対象のDB接続情報をfixする
     - yokuwakaru/dbconnect.php を適宜編集する
       `host=localhost` -> `host=mysql`
 1. 環境構築完了
-    - ブラウザで `localhost:10080/yokuwakaru` にアクセスする
+    - ブラウザで http://localhost:10080/yokuwakaru にアクセスする
 
 
 ## 参考
