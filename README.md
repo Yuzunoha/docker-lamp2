@@ -51,10 +51,13 @@ docker-lamp2
     ```
 1. phpMyAdminでレビュー対象のsqlをインポートする
     - ブラウザで http://localhost:10040 にアクセスする
-    - yokuwakaru/mini_bbs.sqlをインポートする
+    - `yokuwakaru/mini_bbs.sql`をインポートする
 1. レビュー対象のDB接続情報をfixする
-    - yokuwakaru/dbconnect.php を適宜編集する
-      `host=localhost` -> `host=mysql`
+    - `yokuwakaru/dbconnect.php`を編集する
+      ```
+      ✕ host=localhost
+      ○ host=mysql
+      ```
 1. 環境構築完了
     - ブラウザで http://localhost:10080/yokuwakaru にアクセスする
 1. docker停止
