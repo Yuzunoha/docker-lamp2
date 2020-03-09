@@ -4,17 +4,17 @@
 ## ディレクトリ解説
 ```
 docker-lamp2
-├── html .............. ドキュメントルート。ここにレビュー対象リポジトリをcloneする
-│   └── index.php ..... phpinfo();
+├── html ....................... ドキュメントルート。ここにレビュー対象リポジトリをcloneする
+│   └── index.php .............. phpinfo();
 ├── mysql5.7
-│   ├── mysql ......... 起動すると作られる。データ永続化用
-│   ├── mysqlvolume ... mysqlコンテナにマウントされる。ホストとのファイル受け渡し用
-│   └── my.cnf ........ mysqlコンテナの設定ファイル。日本語が文字化けしない
+│   ├── mysql .................. 起動すると作られる。データ永続化用
+│   ├── mysqlvolume ............ mysqlコンテナにマウントされる。ホストとのファイル受け渡し用
+│   └── my.cnf ................. mysqlコンテナの設定ファイル。日本語が文字化けしない
 ├── php7.2
 │   ├── sites-enabled
 │   │   └── 000-default.conf ... apacheの/var/www/html配下の.htaccessを有効にしている
-│   ├── Dockerfile .... phpコンテナのDockerファイル
-│   └── php.ini ....... phpの設定ファイル。日本語が文字化けしない
+│   ├── Dockerfile ............. phpコンテナのDockerファイル
+│   └── php.ini ................ phpの設定ファイル。日本語が文字化けしない
 ├── .gitignore
 ├── docker-compose.yml
 └── README.md
