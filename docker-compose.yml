@@ -6,6 +6,7 @@ services:
       context: ./php7.2
     volumes:
       - ./php7.2/php.ini:/usr/local/etc/php/php.ini
+      - ./php7.2/sites-enabled/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
       - ./html:/var/www/html
     ports:
       - 10080:80
