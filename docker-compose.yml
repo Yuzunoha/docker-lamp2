@@ -31,8 +31,6 @@ services:
       - PMA_HOST=mysql
       - PMA_USER=root
       - PMA_PASSWORD=root
-    links:
-      - mysql
     ports:
       - 10040:80
     volumes:
